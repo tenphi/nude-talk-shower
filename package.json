@@ -1,15 +1,15 @@
 {
-  "name": "nude-talk-slides",
+  "name": "nude-talk-shower",
   "description": "Nude Talk Slides",
   "version": "1.0.0",
   "author": {
     "name": "Yamanov Andrey",
     "url": "https://tenphi.me"
   },
-  "homepage": "https://github.com/tenphi/nude-talk-slides",
+  "homepage": "https://github.com/tenphi/nude-talk-shower",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tenphi/nude-talk-slides.git"
+    "url": "git://github.com/tenphi/nude-talk-shower.git"
   },
   "license": "MIT",
   "keywords": [
