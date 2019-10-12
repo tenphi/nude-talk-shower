@@ -1,210 +1,1369 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Shower Presentation Engine</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
-    <style>
-        .shower {
-            --slide-ratio: calc(16 / 9);
-        }
-    </style>
+  <title>Shower Presentation Engine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+  <style>
+  .shower {
+    --slide-ratio: calc(16 / 9);
+  }
+  </style>
 </head>
-<body class="shower list">
+<body class="shower list nu-prevent-defaults">
 
-    <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
-    </header>
+<header class="caption">
+  <h1>Голый фронтенд</h1>
+  <p>Яманов Андрей, Sellerscale</p>
+</header>
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-        <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                color: white;
-                text-align: center;
-                font-size: 70px;
-            }
+<section class="slide" id="cover">
+  <h2>Голый фронтенд</h2>
+  <p><a href="https://github.com/tenphi">Яманов Андрей</a>, <a href="https://sellerscale.com">Sellerscale</a>
+  </p>
+  <figure>
+    <img class="cover" src="pictures/cover.jpg"
+         alt="Первобытные люди, Иллюстрация">
+    <figcaption class="copyright right white">
+      <a href="https://www.goipadwallpapers.com/wallpaper/1826.html">
+        www.goipadwallpapers.com
+      </a>
+    </figcaption>
+  </figure>
+  <img width="250" class="place bottom right" src="/pictures/frontend-conf-logo.png"
+       alt="FrontendConf Logo"/>
+  <style>
+  .place.bottom.right {
+    right: 2rem;
+  }
 
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                color: white;
-                font-style: italic;
-                font-size: 20px;
-            }
+  #cover h2 {
+    margin: -3rem 0 0 0;
+    color: white;
+    text-align: left;
+    font-size: 70px;
+  }
 
-            #cover p a {
-                color: white;
-            }
-        </style>
-    </section>
+  #cover p {
+    margin: 10px 0 0;
+    text-align: right;
+    color: white;
+    font-style: italic;
+    font-size: 24px;
+  }
 
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-    </section>
+  #cover p a {
+    color: white;
+  }
+  </style>
+</section>
 
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
+<section class="slide">
+  <h2>Яманов Андрей</h2>
+  <ul>
+    <li class="next">Фронтенд-разрботчик в Sellerscale</li>
+    <li class="next">Организатор MoscowJS</li>
+    <li class="next">Бывший глава ПК FrontendConf</li>
+    <li class="next">10 лет профессионального опыта</li>
+    <li class="next">Хобби: вокал, фотография.</li>
+  </ul>
+  <img
+    width="50%" class="place right" src="pictures/photo.jpg"
+    alt="Андрей Яманов, фото, косплей">
+</section>
 
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        </div>
-    </section>
+<section class="slide">
+  <figure>
+    <img class="cover" src="pictures/sellerscale.jpg"
+         alt="Sellerscale landing">
+  </figure>
+</section>
 
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
+<section class="slide">
+  <figure>
+    <img class="cover" src="pictures/sellerscale-app.jpg"
+         alt="Sellerscale application">
+  </figure>
+</section>
 
-    <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
-    </section>
+<section class="slide">
+  <figure>
+    <img class="cover" src="pictures/moscow_css.jpg"
+         alt="Moscow CSS Meetup photo">
+    <figcaption class="copyright right white">
+      <a href="http://fiftyfootshadows.net/">© John Carey</a>
+    </figcaption>
+  </figure>
+  <p class="note">ДОКЛАД</p>
+  <h2>CSS: Время прощаться...</h2>
+  <p>moscow_css meetup</p>
+  <p>
+    <a href="http://j.mp/css-goodbye">http://j.mp/css-goodbye</a>
+  </p>
+</section>
 
-    <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
-    </section>
+<!--<section class="slide">-->
+<!--  <p class="note">ДОКЛАД</p>-->
+<!--  <h2>Продвижение<br/>опенсорс-проектов</h2>-->
+<!--  <p class="author">Андрей Ситник</p>-->
+<!--  <p>-->
+<!--    <a href="http://frontendconf.ru/moscow-rit/2019/abstracts/4784">Запись выступления</a>-->
+<!--  </p>-->
+<!--  <img-->
+<!--    width="40%" class="place right" src="pictures/sitnik.jpg"-->
+<!--    alt="Андрей Ситник, фото">-->
+<!--</section>-->
 
-    <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
+<!--<section class="slide">-->
+<!--  <h2>Выбор технологии</h2>-->
+<!--  <nu-grid columns="1fr 1fr" gap="3">-->
+<!--    <nu-block>-->
+<!--      <h3>Библиотека А</h3>-->
+<!--      <p>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--      </p>-->
+<!--    </nu-block>-->
+<!--    <nu-block>-->
+<!--      <h3>Библиотека Б</h3>-->
+<!--      <p>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--        <nu-icon name="star"></nu-icon>-->
+<!--      </p>-->
+<!--    </nu-block>-->
+<!--  </nu-grid>-->
+<!--</section>-->
 
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
-    </section>
+<!--<section class="slide">-->
+<!--  <h2>Выбор подхода</h2>-->
+<!--  <nu-grid columns="1fr 1fr" gap="3">-->
+<!--    <nu-block>-->
+<!--      <h3>Подход А</h3>-->
+<!--      <p>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--        <nu-icon name="users"></nu-icon>-->
+<!--      </p>-->
+<!--    </nu-block>-->
+<!--    <nu-block>-->
+<!--      <h3>Подход Б</h3>-->
+<!--      <p>-->
+<!--        <nu-icon name="user"></nu-icon>-->
+<!--        <nu-icon name="user"></nu-icon>-->
+<!--        <nu-icon name="user"></nu-icon>-->
+<!--      </p>-->
+<!--    </nu-block>-->
+<!--  </nu-grid>-->
+<!--</section>-->
 
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
-    </section>
+<!--<section class="slide">-->
+<!--  <h2>Diversity problem</h2>-->
+<!--  <h3>Проблема разнообразия</h3>-->
+<!--  <p>Чем больше разработчики используют подход А, тем больше шанс, что они смогут открыть для себя подход Б.</p>-->
+<!--  <p class="next">Разработчики перестают адекватно оценивать возможности, которыми располагают.</p>-->
+<!--</section>-->
 
-    <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
-        </ol>
-    </section>
+<section class="slide" id="i-want-site">
+  <figure>
+    <img class="cover" style="width: 100%;" src="pictures/imagine.jpg"
+         alt="Я хочу сайт, Иллюстрация">
+    <figcaption class="copyright right white">
+      <a
+        href="https://www.inc.com/david-finkel/2-things-you-must-do-before-you-start-your-next-project.html">©
+        David Finkel</a>
+    </figcaption>
+  </figure>
+  <h2>"Я хочу сайт..."</h2>
+  <style>
+  #i-want-site h2 {
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+    color: white;
+  }
+  </style>
+</section>
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
+<section class="slide">
+  <h2>Но вначале нужно решить...</h2>
+  <ul>
+    <li class="next">Какой фреймворк использовать?</li>
+    <li class="next">Какую методологию вёрстки выбрать?</li>
+    <li class="next">Взять ли готовую библиотеку компонентов или написать свою?</li>
+    <li class="next">Какой сборщик выбрать и как его настроить?</li>
+    <li class="next">Какие использовать цвета, шрифты, отступы?</li>
+    <li class="next">Как сделать мой сайт доступным?</li>
+    <li class="next">И как чтобы быстро и <s>не стыдно</s> поддерживаемо?</li>
+  </ul>
+</section>
 
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
-    </section>
+<section class="slide">
+  <h2>Опыт не помогает</h2>
+  <p>Чем более опытными мы становимся, тем больше требований предъявляем к сайтам, тем больше работы
+    делаем.</p>
+</section>
 
-    <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
-    </footer>
+<section class="slide">
+  <h2>"Я хочу всего лишь лэндинг..."</h2>
+  <p class="next">Сложность сайта часто не меняет требования. Даже самый простой сайт должен
+    быть:</p>
+  <div class="columns two">
+    <ul>
+      <li class="next">Доступным</li>
+      <li class="next">Адаптивным</li>
+      <li class="next">Быстрым</li>
+      <li class="next">Красивым</li>
+    </ul>
+    <ul>
+      <li class="next">Удобным</li>
+      <li class="next">Понятным</li>
+      <li class="next">Поддерживаемым!</li>
+    </ul>
+  </div>
+</section>
 
-    <div class="progress"></div>
+<section class="slide">
+  <figure>
+    <img class="cover" style="width: 100%;" src="pictures/frustration.jpg"
+         alt="Фрустрация, Иллюстрация">
+    <figcaption class="copyright right white">
+      <a
+        href="http://mediakritika.by/article/4405/issledovanie-zhizn-v-socialnyh-setyah-svyazana-s-frustraciey-i-plohim-nastroeniem">©
+        http://mediakritika.by</a>
+    </figcaption>
+  </figure>
+  <h2 class="shout" style="color: white;">Фрустрация</h2>
+</section>
 
-    <script src="node_modules/shower-core/shower.min.js"></script>
-    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+<section class="slide">
+  <h2>Фрустрация</h2>
+  <nu-grid>
+    <p><i>(от лат. frustratio – обман, тщетное ожидание)</i> – особое эмоциональное состояние,
+      возникающее, когда человек, сталкиваясь с какими-либо препятствиями, не может достичь своих
+      целей и удовлетворение какого-либо желания или потребности становится невозможным.</p>
+    <nu-block>
+
+    </nu-block>
+  </nu-grid>
+</section>
+
+<section class="slide">
+  <h2>Мы привыкли не выбирать</h2>
+  <p>"Решим по ходу..."</p>
+</section>
+
+<section class="slide">
+  <h2>Но даже если...</h2>
+  <p>Мы анализируем задачу и выбираем подходящий стек, но...</p>
+  <ul>
+    <li class="next">Требования постоянно меняются</li>
+    <li class="next">Технологии постоянно обновляются</li>
+    <li class="next">Подходы постоянно эволюционируют</li>
+  </ul>
+  <h3 class="next">Сайты постоянно устаревают.</h3>
+</section>
+
+<section class="slide">
+  <h2>Разработка интерфейсов <s>может</s> <u>должна</u> быть проще!</h2>
+  <p>*iOS-разработчики поймут</p>
+</section>
+
+<section class="slide">
+  <h2>Вдохновляющие примеры из мира<br/>Веб-разработки</h2>
+  <ul>
+    <li>Parcel</li>
+    <li>editorconfig</li>
+    <li>browserslist</li>
+    <li>Svelte</li>
+    <li>@pikapkg/web</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2 class="shout">Интерфейсы</h2>
+</section>
+
+<section class="slide">
+  <figure>
+    <img class="cover" style="width: 100%;" src="pictures/pills.jpg"
+         alt="Две таблетки, синяя и красная, Иллюстрация">
+    <figcaption class="copyright right white">
+      <a
+        href="https://www.forbes.com/sites/jessicabaron/2019/02/26/the-matrix-at-20-did-we-take-the-blue-pill/#71082694140e">©
+        Forbes</a>
+    </figcaption>
+  </figure>
+  <div class="columns two" style="color: white;">
+    <p>Готовое, но... плохокастомизируемое решение</p>
+    <p>Написать всё "с нуля"</p>
+  </div>
+  <nu-icon name="x" size="30" color="white" class="place center next"></nu-icon>
+</section>
+
+<section class="slide">
+  <h2>Веб-интерфейс не обязательно описавать через HTML/CSS</h2>
+  <p class="next">CSS это очень и очень сложная технология...</p>
+</section>
+
+<section class="slide">
+  <h2 class="shout">CSS СЛОЖНЫЙ</h2>
+</section>
+
+<section class="slide">
+  <h2 class="shout">CSS ИЗБЫТОЧНЫЙ</h2>
+</section>
+
+<section class="slide">
+  <h2>Примеры избыточности CSS</h2>
+  <p>Как нарисовать
+    <mark>стандартный</mark>
+    бордер:
+  </p>
+  <shower-code>
+    <textarea>
+      [[<div]] class="block"[[></div>]]
+    </textarea>
+  </shower-code>
+  <shower-code>
+    <textarea>
+      .block {
+        [[border]]: 1px solid var(--border-color);
+      }
+    </textarea>
+  </shower-code>
+</section>
+
+<section class="slide">
+  <p>
+    Как спозиционировать тултип
+    <mark>сверху</mark>
+    :
+  </p>
+  <shower-code>
+    <textarea>
+      <div class="block">...<div class="tooltip">...</div></div>
+    </textarea>
+  </shower-code>
+  <shower-code class="next">
+    <textarea>
+      .block { position: relative; }
+      .block:hover .tooltip {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translate(-50%, 0); }
+    </textarea>
+  </shower-code>
+</section>
+
+<!--<section class="slide">-->
+<!--  <figure>-->
+<!--    <img class="cover" style="width: 100%;" src="pictures/difficult.jpg"-->
+<!--         alt="Карина видео-блогер, Сложна, Фотография">-->
+<!--    <figcaption class="copyright right white">-->
+<!--      <a-->
+<!--        href="https://www.meme-arsenal.com/create/meme/305989">© Meme Arsenal</a>-->
+<!--    </figcaption>-->
+<!--  </figure>-->
+<!--</section>-->
+
+<section class="slide">
+  <h2>Мы можем описанить то как выглядит и работает интерфейс простым языком.</h2>
+</section>
+
+<section class="slide">
+  <h2>ПРИМЕР</h2>
+  <p class="note">
+    "Сайт с чёрным текстом на белом фоне. Элементы интерфейса имеют скругление <em>0.5rem</em>.
+    Для подсветки интерактивных элементов используется тёмно-синий цвет. Сайт центрирован.
+    Максимальная ширина 1280px..."
+  </p>
+</section>
+
+<section class="slide">
+  <h2>ПРИМЕР</h2>
+  <p class="note">
+    "В середине блока находится большая яркая кнопка, её внутренние отсутупы равны 2rem.
+    Внутри текст УЗНАТЬ БОЛЬШЕ и иконка знака вопроса. При наведении на кнопку, иконка
+    проворачивается на 180 градусов горизонтально..."
+  </p>
+  <h3 class="next">
+    CSS избыточнее чем человеческая речь!
+  </h3>
+</section>
+
+<section class="slide">
+  <h2>Давайте переводить речь в интерфейсы!</h2>
+  <h3 class="next">Минусы</h3>
+  <p class="next">
+    Очевидно, мы пока не умеем преобразовывать текст/голос в готовую вёрстку.
+  </p>
+  <h3 class="next">Зато мы умеем в XML!</h3>
+</section>
+
+<section class="slide">
+  <h2>Стандартный бордер?</h2>
+  <shower-code>
+    <textarea>
+      <block [[border]]>
+        Block text
+      </block>
+    </textarea>
+  </shower-code>
+</section>
+
+<section class="slide">
+  <h2>Тултип сверху?</h2>
+  <shower-code>
+    <textarea>
+      <block>
+        <tooltip [[place="outside-top" ]]></tooltip>
+      </block>
+    </textarea>
+  </shower-code>
+</section>
+
+<section class="slide">
+  <h2>Попробуем посложнее...</h2>
+  <nu-grid columns="1fr 1fr">
+    <shower-code>
+      <textarea>
+        <block
+          background="#ffeecc"
+          padding="[[1]]"
+          radius="[[2x]]"
+          [[border]]>
+          Block text
+        </block>
+      </textarea>
+    </shower-code>
+    <nu-block>
+      <nu-block
+        background="#ffeecc"
+        padding="1rem"
+        radius="1rem"
+        border=".25rem">Block text
+      </nu-block>
+    </nu-block>
+  </nu-grid>
+</section>
+
+<section class="slide">
+  <h2>Семантика и доступность</h2>
+  <nu-grid columns="1fr 1fr">
+    <shower-code>
+      <textarea>
+        <[[heading]]>
+          This is a header
+        </heading>
+      </textarea>
+    </shower-code>
+    <shower-code>
+      <textarea>
+        <block [[role="contentinfo" ]]>
+          This is a footer
+        </block>
+      </textarea>
+    </shower-code>
+  </nu-grid>
+</section>
+
+<section class="slide">
+  <h2 class="shout">Реализация</h2>
+</section>
+
+<section class="slide">
+  <h2>Фаза 1</h2>
+  <div class="columns two">
+    <div>
+      Написать базовые компоненты на Vue.JS с генерацией<br/>inline-стилей и опробовать их в бою.
+    </div>
+    <div>
+      <img width="392" src="/pictures/phase-1.jpg" alt="Phase 1, Illustration"/>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Фаза 2</h2>
+  <div class="columns two">
+    <div>
+      Написать фреймворк для реализации базовых компонентов на Custom&nbsp;Elements с генерацией
+      inline-стилей, и опробовать это всё в бою.
+    </div>
+    <div>
+      <img width="392" src="/pictures/phase-2.jpg" alt="Phase 2, Illustration"/>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Фаза 3</h2>
+  <div class="columns two">
+    <div>
+      Переписать фреймворк на использование CSS-генерации вместо inline-стилей и опробовать его в
+      бою.
+    </div>
+    <div>
+      <img width="392" src="/pictures/phase-3.jpg" alt="Phase 3, Illustration"/>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <img class="place center" src="/pictures/nude-logo.png" alt="Nude Elements Logo"/>
+</section>
+
+<section class="slide">
+  <h2>NUDE Elements</h2>
+  <ul>
+    <li>Язык разметки для интерфейсов</li>
+    <li class="next">Методология вёрстки</li>
+    <li class="next">Фреймворк</li>
+    <li class="next">Библиотека элементов</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2 class="shout">Основные принципы</h2>
+</section>
+
+<section class="slide">
+  <h2>Разметка</h2>
+  <p>Все элементы начинаются с <code>
+    <mark>nu-</mark>
+  </code></p>
+  <shower-code>
+    <textarea>
+      <nu-block></nu-block>
+      <nu-btn></nu-btn>
+      <nu-card></nu-card>
+      <nu-grid></nu-grid>
+      ...
+    </textarea>
+  </shower-code>
+</section>
+
+<section class="slide">
+  <h2>На каждый атрибут генерится CSS<br/>через функцию</h2>
+  <shower-code>
+    <textarea>
+      <nu-block [[border="4x dashed left" ]]></nu-block>
+    </textarea>
+  </shower-code>
+  <shower-code>
+    <textarea>
+      nu-block[[[border="4x dashed left"]]]{
+        border: calc(var(--nu-theme-border-width) * 4)
+          dashed
+          var(--nu-theme-border-color);
+      }
+    </textarea>
+  </shower-code>
+</section>
+
+<section class="slide">
+  <h2>Генерится только уникальный CSS</h2>
+  <shower-code>
+    <textarea>
+      &lt;!-- создаётся CSS для атрибута border -->
+      <nu-block [[border="4x dashed left" ]]>
+        First element
+      </nu-block>
+      &lt;!-- ничего не происходит -->
+      <nu-block [[border="4x dashed left" ]] size="xs">
+        Second element
+      </nu-block>
+    </textarea>
+  </shower-code>
+</section>
+
+<section class="slide">
+  <h2>Непараметризируемые свойста и свойста текста задаются через атрибут <code>mod</code></h2>
+  <nu-grid columns="1fr 1fr" gap="3">
+    <nu-block>
+      <shower-code>
+        <textarea>
+          <nu-block
+            [[mod="w6 uppercase u i">]]
+            Text example
+          </nu-block>
+        </textarea>
+      </shower-code>
+    </nu-block>
+    <nu-block>
+      <shower-code>
+        <textarea>
+          font-size:600;
+          text-transform:uppercase;
+          text-decoration:underline;
+          text-style:italic;
+        </textarea>
+      </shower-code>
+    </nu-block>
+  </nu-grid>
+  <!--  <nu-block>-->
+  <!--    <nu-theme></nu-theme>-->
+  <!--    <nu-card>-->
+  <!--      <nu-block mod="w6 uppercase u i center" size="2 3">Text example</nu-block>-->
+  <!--    </nu-card>-->
+  <!--  </nu-block>-->
+  <p class="note">* есть исключения, часть свойств дублируется</p>
+</section>
+
+<section class="slide">
+  <h2>Значения атрибутов максимально опираются на стандарты, но упрощают их</h2>
+  <nu-block>
+    <shower-code>
+      <textarea>
+        <nu-[[grid]]
+          [[columns]]="[[1fr auto]]"
+          [[gap]]="1"
+          [[content]]="[[space-between]]">
+          <nu-[[heading]] [[level]]="3">Header</nu-heading>
+        <nu-btn>Action</nu-btn>
+        </nu-grid>
+      </textarea>
+    </shower-code>
+  </nu-block>
+</section>
+
+<section class="slide">
+  <h2>Метрические атрибуты</h2>
+  <p>Поддерживаются различные кастомные единицы</p>
+  <ul>
+    <li class="next">
+      <mark>1x</mark>
+      - базовый размер атрибута
+    </li>
+    <li class="next">
+      <mark>1bw</mark>
+      - базовая толщина бордюра
+    </li>
+    <li class="next">
+      <mark>1br</mark>
+      - базовая ширина радиуса
+    </li>
+    <li class="next">
+      <mark>1p</mark>
+      - базовая величина отступа
+    </li>
+    <li class="next">
+      <mark>1**</mark>
+      - добавьте кастомный
+    </li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2 class="shout">Доступность</h2>
+</section>
+
+<section class="slide">
+  <h2>Вёрстка (Коллизия ID)</h2>
+  <shower-code>
+    <textarea>
+      <nu-block labelledby="[[header]]">
+        <nu-heading id="[[header]]">Header text</nu-heading>
+      </nu-block>
+      <nu-block labelledby="[[header]]">
+        <nu-heading id="[[header]]">Header text</nu-heading>
+      </nu-block>
+    </textarea>
+  </shower-code>
+</section>
+
+<section class="slide">
+  <h2>В NUDE Уникальность
+    <mark>id</mark>
+    гарантируется автоматически
+  </h2>
+  <div class="columns two">
+    <div>
+      <h3>Вёрстка</h3>
+      <shower-code>
+        <textarea>
+          <nu-block id="item"/>
+          <nu-block id="item"/>
+        </textarea>
+      </shower-code>
+    </div>
+    <div>
+      <h3>Runtime</h3>
+      <shower-code>
+        <textarea>
+          <nu-block id="item--1"/>
+          <nu-block id="item--2"/>
+        </textarea>
+      </shower-code>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Runtime</h2>
+  <shower-code>
+    <textarea>
+      <nu-block labelledby="..." [[aria-labelledby]]="[[!header--1]]">
+        <nu-heading [[role="heading" ]] id="[[!header--1]]"
+                    [[aria-level="1" ]]>Header text</nu-heading>
+      </nu-block>
+      <nu-block labelledby="..." [[aria-labelledby]]="[[!header--2]]">
+        <nu-heading [[role="heading" ]] id="[[!header--2]]"
+                    [[aria-level="1" ]]>Header text</nu-heading>
+      </nu-block>
+    </textarea>
+  </shower-code>
+</section>
+
+<section class="slide">
+  <nu-grid columns="1fr 1fr">
+    <nu-block>
+      <shower-code>
+        <textarea>
+          <nu-tablist border="bottom">
+            <nu-tab [[controls="first" ]]>First</nu-tab>
+            <nu-tab controls="second">Second</nu-tab>
+            <nu-tab controls="third">Third</nu-tab>
+          </nu-tablist>
+          <nu-block [[id="first" ]]>Content 1</nu-block>
+          <nu-block id="second">Content 2</nu-block>
+          <nu-block id="third">Content 3</nu-block>
+        </textarea>
+      </shower-code>
+    </nu-block>
+  </nu-grid>
+</section>
+
+<section class="slide">
+  <h2>Доступные табы</h2>
+  <nu-tablist border="bottom" size="h1">
+    <nu-tab controls="first">First</nu-tab>
+    <nu-tab controls="second">Second</nu-tab>
+    <nu-tab controls="third">Third</nu-tab>
+  </nu-tablist>
+  <nu-block id="first">Content 1</nu-block>
+  <nu-block id="second">Content 2</nu-block>
+  <nu-block id="third">Content 3</nu-block>
+</section>
+
+<section class="slide">
+  <h2 class="shout">Адаптивность</h2>
+</section>
+
+<section class="slide">
+  <h2>Контекстная адаптивность</h2>
+  <shower-code>
+    <textarea>
+      <nu-block responsive="[[1280px|960px]]">
+    </textarea>
+  </shower-code>
+</section>
+
+<section class="slide">
+  <h2>Контекстная адаптивность</h2>
+  <shower-code>
+    <textarea>
+      <nu-block responsive="[[1280px|960px]]">
+        <nu-grid columns="[[repeat(4, 1fr)|1fr 1fr|1fr]]">
+          <nu-block ...>...</nu-block>
+          ...
+    </textarea>
+  </shower-code>
+  <nu-grid columns="repeat(3, 1fr)">
+    <nu-block>0 - 959px</nu-block>
+    <nu-block>960px - 1279px</nu-block>
+    <nu-block>1280px - ∞</nu-block>
+    <nu-block>columns="repeat(4, 1fr)"</nu-block>
+    <nu-block>columns="1fr 1fr"</nu-block>
+    <nu-block>columns="1fr"</nu-block>
+  </nu-grid>
+</section>
+
+<section class="slide">
+  <h2>Особенности механизма адаптивности</h2>
+  <ul>
+    <li>Элемент считает атрибуты по точкам адаптивности ближайшего родителя</li>
+    <li class="next">Может быть определена на любом
+      <mark>nu-</mark>
+      элементе
+    </li>
+    <li class="next">Может быть динамически изменена</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2 class="shout">Темизация</h2>
+</section>
+
+<section class="slide">
+  <h2>Генерация цветов</h2>
+  <p>Цвета генерятся автоматически на базе 3-х основных.</p>
+  <nu-grid columns="1fr 1fr">
+    <nu-theme
+      color="#333"
+      background-color="#fff"
+      border-color="rgba(210, 221, 236, 1)"
+      special-color="rgba(24, 133, 217, 1)"></nu-theme>
+    <nu-block padding="0 0 0 .25" background="text" color="background">--nu-theme-color</nu-block>
+    <nu-block padding="0 0 0 .25" background="background" color="text">--nu-theme-background-color
+    </nu-block>
+    <nu-block padding="0 0 0 .25" background="border" color="text">--nu-theme-border-color
+    </nu-block>
+    <nu-block padding="0 0 0 .25" background="special" color="special-background">
+      --nu-theme-special-color
+    </nu-block>
+    <nu-block padding="0 0 0 .25" background="special-background" color="special">
+      --nu-theme-special-background-color
+    </nu-block>
+    <nu-block padding="0 0 0 .25" background="minor" color="minor-background">
+      --nu-theme-minor-color
+    </nu-block>
+    <nu-block padding="0 0 0 .25" background="minor-background" color="minor">
+      --nu-theme-minor-background-color
+    </nu-block>
+    <nu-block padding="0 0 0 .25" background="hover" color="text">--nu-theme-hover-color</nu-block>
+    <nu-block padding="0 0 0 .25" background="heading" color="background">--nu-theme-hover-color
+    </nu-block>
+    <nu-block padding="0 0 0 .25" background="focus" color="text">--nu-theme-hover-color</nu-block>
+    <nu-block padding="0 0 0 .25" background="shadow" color="text">--nu-theme-shadow-color
+    </nu-block>
+    <nu-block padding="0 0 0 .25" background="subtle" color="text">--nu-theme-subtle-color
+    </nu-block>
+  </nu-grid>
+</section>
+
+<section class="slide">
+  <h2>Объявление тем</h2>
+  <shower-code>
+    <textarea>
+      <nu-block>
+        <nu-theme
+          name="light-red" ([[по умолчанию - default]])
+          [[color]]="#913900"
+          [[background-color]]="#ffe1e0"
+          [[border-color]]="rgba(210, 221, 236, 1)"
+          [[special-color]]="rgba(24, 133, 217, 1)"></nu-theme>...
+    </textarea>
+  </shower-code>
+</section>
+
+<section class="slide">
+  <h2>Использование темы</h2>
+  <div class="columns two">
+    <shower-code>
+      <textarea>
+        <nu-card [[theme="light-red" ]]>
+          Colored Card
+        </nu-card>
+      </textarea>
+    </shower-code>
+    <nu-block>
+      <nu-theme
+        name="light-red"
+        color="#913900"
+        background-color="#ffe1e0"
+        border-color="rgba(210, 221, 236, 1)"
+        special-color="rgba(24, 133, 217, 1)"></nu-theme>
+      <nu-card theme="light-red" border="4x">Colored Card</nu-card>
+    </nu-block>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Другие параметры тем</h2>
+  <p>Также можно задать базовые значения для следующих свойств:</p>
+  <ul>
+    <li class="next">padding - <code>--nu-theme-padding</code></li>
+    <li class="next">border-radius - <code>--nu-theme-border-radius</code></li>
+    <li class="next">border-width - <code>--nu-theme-border-width</code></li>
+    <li class="next">shadow-intensity - <code>--nu-theme-shadow-intensity</code></li>
+    <li class="next">animation-time - <code>--nu-theme-animation-time</code></li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Особенности механизма тем</h2>
+  <ul>
+    <li class="next">Динамические создание и изменение тем</li>
+    <li class="next">Наследование именованных тем от default-темы</li>
+    <li class="next">Наследование тем от родителя</li>
+    <li class="next">
+      Поддерживают Custom Properties
+      <mark>experimental</mark>
+    </li>
+    <li class="next">Поддержка HTML-цветов и кастомных цветов
+      <mark>experimental</mark>
+    </li>
+    <li class="next">Адаптивная интенсивность тени</li>
+    <li class="next">Автоматическая <strong>Тёмная Тема</strong>!</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <figure>
+    <img class="cover" src="pictures/light-schema.png"
+         alt="Sellerscale interface in light theme">
+  </figure>
+</section>
+
+<section class="slide">
+  <figure>
+    <img class="cover" src="pictures/dark-schema.png"
+         alt="Sellerscale interface in dark theme">
+  </figure>
+</section>
+
+<section class="slide">
+  <figure>
+    <img class="cover" style="width: 100%;" src="pictures/light-schema-zoom.png"
+         alt="Sellerscale interface in light theme">
+  </figure>
+</section>
+
+<section class="slide">
+  <figure>
+    <img class="cover" style="width: 100%;" src="pictures/dark-schema-zoom.png"
+         alt="Sellerscale interface in dark theme">
+  </figure>
+</section>
+
+<section class="slide">
+  <h2>Дополнительно</h2>
+  <img style="width: 100%;" src="pictures/interface-settings.png"
+       alt="Possible interface settings">
+</section>
+
+<section class="slide">
+  <h2 class="shout">Состояние</h2>
+</section>
+
+<section class="slide">
+  <h2>Значение атрибута можно подписать на состояние</h2>
+  <nu-grid columns="auto auto">
+    <nu-theme></nu-theme>
+    <nu-block>
+      <shower-code>
+        <textarea>
+          <nu-card
+            border=[["outside :hover[4x outside]"]]>
+            CARD TEXT
+          </nu-card>
+        </textarea>
+      </shower-code>
+    </nu-block>
+    <nu-block>
+      <nu-block>DEFAULT state</nu-block>
+      <nu-card
+        border="outside">
+        CARD TEXT
+      </nu-card>
+      <nu-block>HOVER state</nu-block>
+      <nu-card
+        border="4x outside">
+        CARD TEXT
+      </nu-card>
+    </nu-block>
+  </nu-grid>
+</section>
+
+<section class="slide">
+  <h2>Значение атрибута можно подписать на состояние элемента выше!</h2>
+  <nu-grid columns="auto auto">
+    <nu-theme></nu-theme>
+    <nu-block>
+      <shower-code>
+        <textarea>
+          <nu-card
+            id="[[parent]]">
+            <nu-block color=[["#parent:hover[red]"]]>
+              CARD TEXT
+            </nu-block>
+          </nu-card>
+        </textarea>
+      </shower-code>
+    </nu-block>
+    <nu-block>
+      <nu-block>DEFAULT state</nu-block>
+      <nu-card
+        id="parent">
+        <nu-block>
+          CARD TEXT
+        </nu-block>
+      </nu-card>
+      <nu-block>HOVER state</nu-block>
+      <nu-card
+        id="parent">
+        <nu-block color="red">
+          CARD TEXT
+        </nu-block>
+      </nu-card>
+    </nu-block>
+  </nu-grid>
+</section>
+
+<section class="slide">
+  <h2>А также можно подписать на состояние прямого родителя!</h2>
+  <nu-grid columns="auto auto">
+    <nu-theme></nu-theme>
+    <nu-block>
+      <shower-code>
+        <textarea>
+          <nu-card>
+            <nu-block color=[["^:hover[red]"]]>
+              CARD TEXT
+            </nu-block>
+          </nu-card>
+        </textarea>
+      </shower-code>
+    </nu-block>
+    <nu-block>
+      <nu-block>DEFAULT state</nu-block>
+      <nu-card
+        id="parent">
+        <nu-block>
+          CARD TEXT
+        </nu-block>
+      </nu-card>
+      <nu-block>HOVER state</nu-block>
+      <nu-card
+        id="parent">
+        <nu-block color="red">
+          CARD TEXT
+        </nu-block>
+      </nu-card>
+    </nu-block>
+  </nu-grid>
+</section>
+
+<section class="slide">
+  <h2>Особенности работы с состояниями</h2>
+  <ul>
+    <li class="next">Поддерживают все значения атрибутов</li>
+    <li class="next">Поддержка кастомных состояний
+      <mark>experimental</mark>
+    </li>
+    <li class="next">Автоматическая генерация неперекрывающихся селекторов</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2 class="shout">Полифилы</h2>
+</section>
+
+<section class="slide">
+  <h2>NUDE Elements идеален для реализации полифилов и экспериментальных фич.</h2>
+  <div class="columns two">
+    <shower-code>
+      <textarea>
+        <nu-flex [[gap=".5" ]]>
+          <nu-btn>One</nu-btn>
+          <nu-btn>Two</nu-btn>
+        </nu-flex>
+      </textarea>
+    </shower-code>
+    <nu-block>
+      <nu-theme></nu-theme>
+      <nu-flex gap=".5">
+        <nu-btn>One</nu-btn>
+        <nu-btn>Two</nu-btn>
+      </nu-flex>
+    </nu-block>
+  </div>
+</section>
+
+<section class="slide">
+  <h2 class="shout">ФИЧИ</h2>
+</section>
+
+<section class="slide">
+  <h2>ФИЧИ</h2>
+  <ul>
+    <li class="next">Возможность легко копировать вёрстку из проекта в проект</li>
+    <li class="next">Совместимость с любым популярным фреймворком</li>
+    <li class="next">Поддержка SSR и No-JS</li>
+    <li class="next">Поддержка всех современных браузеров</li>
+    <li class="next">Возможность создавать свои собственные элементы/аттрибуты/плагины</li>
+    <li class="next">
+      Быстрая и эффективная CSS-генерация
+      <mark>(99% случаев)</mark>
+    </li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2 class="shout">Как начать?</h2>
+</section>
+
+<section class="slide">
+  <h2>Добавление в проект</h2>
+  <shower-code>
+    <textarea>
+      <script
+        src="https://cdn.jsdelivr.net/npm/numl/dist/numl.js">
+      </script>
+    </textarea>
+  </shower-code>
+  <div class="next">
+    <p>или через npm...</p>
+    <shower-code>
+      <textarea>
+        > npm install --save numl
+      </textarea>
+    </shower-code>
+    <shower-code>
+      <textarea>
+        import 'numl';
+      </textarea>
+    </shower-code>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Бандл</h2>
+  <p>Текущий размер -
+    <mark>17кб</mark>
+  </p>
+  <ul>
+    <li>IIFE-версия</li>
+    <li>ESM-версия</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Действительно просто!</h2>
+  <ul>
+    <li class="next">Никаких зависимостей
+      <mark>*</mark>
+    </li>
+    <li class="next">Никакого препроцессинга</li>
+    <li class="next">Никакого конфига</li>
+    <li class="next">Никакого JS-кода для инициализации</li>
+  </ul>
+  <p class="next">Ваш
+    <mark>код</mark>
+    и есть
+    <mark>конфиг</mark>
+    !
+  </p>
+</section>
+
+<section class="slide">
+  <h2 class="shout">ПЛАНЫ НА БУДУЩЕЕ</h2>
+</section>
+
+<section class="slide">
+  <h2>ПЛАНЫ НА БУДУЩЕЕ</h2>
+  <ul>
+    <li class="next">Новые удобные элементы и атрибуты</li>
+    <li class="next">Инструментарий для создания виджетов</li>
+    <li class="next">Улучшенная поддержка ARIA спецификации</li>
+    <li class="next">Формы</li>
+    <li class="next">Полное тестовое покрытие</li>
+    <li class="next">Разделение на модули и плагины для уменьшения размера</li>
+    <li class="next">Контекстные компоненты</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2 class="shout">ОПЫТ ИСПОЛЬЗОВАНИЯ (ЗАКЛЮЧЕНИЕ)</h2>
+</section>
+
+<section class="slide">
+  <h2>ПЛЮСЫ</h2>
+  <ul>
+    <li class="next">Альтернатива CSS-фреймворкам и библиотекам компонентов</li>
+    <li class="next">Итерации от прототипа до конечного продукта</li>
+    <li class="next">Кодовая база меньше и проще в поддержке</li>
+    <li class="next">Маленький технический долг (в плане вёрстки)</li>
+    <li class="next">Работа в удовольствие</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Начальство довольно</h2>
+  <img class="cover" src="pictures/slack.png"
+       alt="Slack chat screenshot">
+</section>
+
+<section class="slide">
+  <h2>МИНУСЫ</h2>
+  <ul>
+    <li>Поддержка фреймворка отняла много времени</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>МИНУСЫ</h2>
+  <ul>
+    <li>
+      <nu-block mod="s">Поддержка фреймворка отняла много времени</nu-block>
+    </li>
+    <li class="next">Верстать всё равно надо уметь</li>
+    <li class="next">CSS для тем и адаптивных атрибутов генерится с задержкой</li>
+    <li class="next">Есть проблемы с доступностью</li>
+    <li class="next">Есть особенности интеграции с фреймворками</li>
+    <li class="next">Отсутствие комьюнити</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <nu-block padding="0 0 0 42%">
+    <h3>НУЖНА ПОМОЩЬ СООБЩЕСТВА</h3>
+    <ul>
+      <li class="next">Обратная связь</li>
+      <li class="next">Помощь в разработке и документировании</li>
+      <li class="next">Идеи по развитию</li>
+      <li class="next">Экспертиза в дизайне, доступности, SSR...</li>
+      <li class="next">Качественное тестовое покрытие</li>
+      <li class="next">Написание статей</li>
+    </ul>
+  </nu-block>
+  <img
+    width="40%" class="place left" src="pictures/propaganda.jpg"
+    alt="Агитационный Плакат, фото">
+</section>
+
+<section class="slide">
+  <h2>Присоединяйтесь!</h2>
+  <p>Уютный чатик в телеграм: <a href="https:/t.me/nudeml">https:/t.me/nudeml</a></p>
+  <p>Репозиторий на Github: <a href="https:/t.me/nudeml">https:/github.com/tenphi/nude</a></p>
+  <p class="next">Поставьте звёздочку! СПАСИБО!</p>
+  <p class="next">Добавляйте NUDE Elements в свой проект и экспериментируйте!</p>
+</section>
+
+<!--<section class="slide">-->
+<!--  <h2>Что насчёт Flex?</h2>-->
+<!--  <nu-grid columns="1fr 1fr" gap="3">-->
+<!--    <shower-code>-->
+<!--      <textarea>-->
+<!--        <[[flex]]-->
+<!--          [[place-content="space-between"]]>-->
+<!--          <block ...></block>-->
+<!--          <block ...></block>-->
+<!--        </[[flex]]>-->
+<!--      </textarea>-->
+<!--    </shower-code>-->
+<!--    <nu-card size="md" radius="1" border="4x">-->
+<!--      <nu-flex place-content="space-between">-->
+<!--        <nu-block-->
+<!--          background="#ffeecc"-->
+<!--          padding="1rem"-->
+<!--          radius="1rem"-->
+<!--          border=".25rem">Block text-->
+<!--        </nu-block>-->
+<!--        <nu-block-->
+<!--          background="#ffeecc"-->
+<!--          padding="1rem"-->
+<!--          radius="1rem"-->
+<!--          border=".25rem">Block text-->
+<!--        </nu-block>-->
+<!--      </nu-flex>-->
+<!--    </nu-card>-->
+<!--  </nu-grid>-->
+<!--</section>-->
+
+<!--<section class="slide">-->
+<!--  <h2>Что насчёт Grid?</h2>-->
+<!--  <nu-grid columns="1fr 1fr" gap="3">-->
+<!--    <shower-code>-->
+<!--      <textarea>-->
+<!--        <grid-->
+<!--          [[columns="1fr 1fr" ]]-->
+<!--          [[gap="1" ]]-->
+<!--          place-content="space-between">-->
+<!--          <block ...></block>-->
+<!--          ...-->
+<!--        </grid>-->
+<!--      </textarea>-->
+<!--    </shower-code>-->
+<!--    <nu-grid-->
+<!--      size="md" radius="1" border="4x" padding="1"-->
+<!--      columns="1fr 1fr"-->
+<!--      gap="1">-->
+<!--      <nu-block-->
+<!--        background="#ffeecc"-->
+<!--        padding="1rem"-->
+<!--        radius="1rem"-->
+<!--        border=".25rem">Block text-->
+<!--      </nu-block>-->
+<!--      <nu-block-->
+<!--        background="#ffeecc"-->
+<!--        padding="1rem"-->
+<!--        radius="1rem"-->
+<!--        border=".25rem">Block text-->
+<!--      </nu-block>-->
+<!--      <nu-block-->
+<!--        background="#ffeecc"-->
+<!--        padding="1rem"-->
+<!--        radius="1rem"-->
+<!--        border=".25rem">Block text-->
+<!--      </nu-block>-->
+<!--      <nu-block-->
+<!--        background="#ffeecc"-->
+<!--        padding="1rem"-->
+<!--        radius="1rem"-->
+<!--        border=".25rem">Block text-->
+<!--      </nu-block>-->
+<!--    </nu-grid>-->
+<!--  </nu-grid>-->
+<!--</section>-->
+
+<footer class="badge">
+  <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+</footer>
+
+<div class="progress"></div>
+
+
+<script src="script.js" type="module"></script>
+<script src="node_modules/shower-core/shower.min.js"></script>
+<!-- Copyright © 3000 Yours Truly, Famous Inc. -->
 
 </body>
 </html>

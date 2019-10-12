@@ -1,18 +1,15 @@
 {
-  "name": "shower",
-  "description": "Shower HTML presentation engine",
-  "version": "2.7.0",
+  "name": "nude-talk-slides",
+  "description": "Nude Talk Slides",
+  "version": "1.0.0",
   "author": {
-    "name": "Vadim Makeev",
-    "url": "https://pepelsbey.net/"
+    "name": "Yamanov Andrey",
+    "url": "https://tenphi.me"
   },
-  "homepage": "https://github.com/shower/shower",
+  "homepage": "https://github.com/tenphi/nude-talk-slides",
   "repository": {
     "type": "git",
-    "url": "git://github.com/shower/shower.git"
-  },
-  "bugs": {
-    "url": "https://github.com/shower/shower/issues"
+    "url": "git://github.com/tenphi/nude-talk-slides.git"
   },
   "license": "MIT",
   "keywords": [
@@ -29,6 +26,7 @@
   "dependencies": {
     "@shower/material": "^2.2.1",
     "@shower/ribbon": "^3.2.2",
+    "numl": "^0.6.27",
     "shower-core": "^2.1.0"
   },
   "devDependencies": {
