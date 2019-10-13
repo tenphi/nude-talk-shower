@@ -1,4 +1,4 @@
-import './node_modules/numl/dist/numl.dev.js';
+// import './node_modules/numl/dist/numl.dev.js';
 
 class ShowerCode extends window.Nude.elements.NuBlock {
   static get nuTag() {

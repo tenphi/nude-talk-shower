@@ -39,6 +39,7 @@
     "prepare": "shower prepare --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
     "archive": "shower archive --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
     "publish": "shower publish --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
+    "upload": "npm run prepare && now ./prepared --name nude-talk",
     "test": "npm run prepare && ls prepared && npm run archive && path-exists archive.zip"
   }
 }
