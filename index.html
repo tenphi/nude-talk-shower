@@ -428,12 +428,12 @@
 <section class="slide">
   <h2>ПРИМЕР</h2>
   <p class="note">
-    "В середине блока находится большая яркая кнопка, её внутренние отсутупы равны 2rem.
+    "В середине блока находится большая CTA-кнопка, её внутренние отсутупы равны 2rem.
     Внутри текст УЗНАТЬ БОЛЬШЕ и иконка знака вопроса. При наведении на кнопку, иконка
     проворачивается на 180 градусов горизонтально..."
   </p>
   <h3 class="next">
-    CSS избыточнее чем человеческая речь!
+    CSS может быть избыточнее чем человеческая речь!
   </h3>
 </section>
 
@@ -819,9 +819,9 @@
     <nu-block>0 - 959px</nu-block>
     <nu-block>960px - 1279px</nu-block>
     <nu-block>1280px - ∞</nu-block>
-    <nu-block>columns="repeat(4, 1fr)"</nu-block>
-    <nu-block>columns="1fr 1fr"</nu-block>
     <nu-block>columns="1fr"</nu-block>
+    <nu-block>columns="1fr 1fr"</nu-block>
+    <nu-block>columns="repeat(4, 1fr)"</nu-block>
   </nu-grid>
 </section>
 
@@ -1275,6 +1275,39 @@
   <p>Репозиторий на Github: <a href="https:/t.me/nudeml">https:/github.com/tenphi/nude</a></p>
   <p class="next">Поставьте звёздочку! СПАСИБО!</p>
   <p class="next">Добавляйте NUDE Elements в свой проект и экспериментируйте!</p>
+</section>
+
+<section class="slide">
+  <h2>Бонус: Shower + Nude</h2>
+  <nu-btn place="inside" padding="2" special size="2 2.5" id="btn">
+    <nu-theme animation-time=".3s"></nu-theme>
+    <nu-icon
+      name="help-circle"
+      inline
+      transform="#btn:hover[rotateY(360deg)]"
+      transition="transform"></nu-icon>
+    УЗНАТЬ БОЛЬШЕ
+  </nu-btn>
+</section>
+
+<section class="slide">
+  <h2>Бонус: Shower + Nude</h2>
+  <div class="columns two">
+    <shower-code>
+      <textarea>
+        <shower-code>
+          <textarea>
+            <nu-block>
+              [[выделенный код]]
+            </nu-block>
+          &lt;/textarea>
+        </shower-code>
+      </textarea>
+    </shower-code>
+    <div>
+      <p>Двойные кавычки для выделения кода <code><mark>[[</mark></code> и <code><mark>]]</mark></code></p>
+    </div>
+  </div>
 </section>
 
 <!--<section class="slide">-->
